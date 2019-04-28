@@ -27,7 +27,7 @@ public class PracticeLaunchBrowser {
 		WebElement password = wd.findElement(By.xpath("//input[@type='password']"));
 		
 		username.sendKeys("r.budhiraja26@gmail.com");
-		username.sendKeys("abc123");	
+		password.sendKeys("abc123");	
 		
 		/*
 		 * WebElement sub = wd.findElement(By.xpath("//input[@value='Log In']"));
@@ -35,7 +35,8 @@ public class PracticeLaunchBrowser {
 		 */
 		
 		password.sendKeys(Keys.ENTER);
-		wd.wait(10000);
+		// wd.wait(10000);
+		Thread.sleep(10000);
 		wd.quit();
 	}
 
